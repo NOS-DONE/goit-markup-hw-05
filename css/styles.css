@@ -674,14 +674,24 @@ footer {
     margin-bottom: 30px;
     /* outline: 1px solid red; */
     background: #FFFFFF;
-    
+    transition-property: box-shadow;
+    transition: box-shadow 250ms linear;
 }
+
+/* .overlay {
+    background: rgba(33, 150, 243, 0.9);
+} */
 
 .portfolio-item:hover {
     box-shadow: 
     1px 4px 6px rgba(0, 0, 0, 0.16), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item:hover ::before,
+.portfolio-item:hover .portfolio-item-desc {
+    opacity: 1;
 }
 
 .portfolio-item-desc-bg {
@@ -724,15 +734,37 @@ footer {
     /* padding-bottom: 20px; */
 }
 
-/* .portfolio-item-product,
-.portfolio-list h2 {
-    padding-left: 24px;
-} */
 
-.portfolio-list .portfolio-item-desc {
+.portfolio-item-img {
+    position: relative;
+}
+
+.portfolio-item-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transition-property: opacity;
+    transition: opacity 250ms linear;
+}
+
+ .portfolio-item-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 24px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    opacity: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    transition-property: opacity;
+    transition: opacity 250ms linear;
 }
+
