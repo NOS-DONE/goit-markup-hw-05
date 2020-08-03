@@ -89,9 +89,13 @@ a {
  }
 
  /* header */
+header {
+}
+
  header .container {
      display: flex;
      align-items: center;
+     border-bottom: 1px solid #ECECEC;
  }
 
  /* .web-studio-header {
@@ -171,7 +175,7 @@ a {
 
 .nav-item-link {
     padding-top: 32px;
-    transition: color 250ms linear ;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .nav-item .nav-item-link,
@@ -198,7 +202,7 @@ a {
     fill: #757575;
     margin-right: 10px;
     transition-property: fill;
-    transition: fill 250ms linear
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon-phone {
     width: 10px;
@@ -206,7 +210,7 @@ a {
     fill: #757575;
     margin-right: 10px;
     transition-property: fill;
-    transition: fill 250ms linear
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-link:hover {
@@ -220,7 +224,7 @@ a {
     padding-bottom: 25px; 
     align-items: center; 
     transition-property: color; 
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -472,13 +476,13 @@ a {
     min-height: 44px;
     border-radius: 50%;
     transition-property: background-color;
-    transition: background-color 250ms linear
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icon-svg {
     fill: var(--icons-color);
     transition-property: fill;
-    transition: fill 250ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-social-list-link:hover .icon-svg,
@@ -520,7 +524,7 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition-property: fill, border;
-    transition: fill 250ms linear, border 250ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo-link:hover {
@@ -584,7 +588,7 @@ footer {
     border-radius: 50%;
     fill: #ffffff;
     transition-property: background-color;
-    transition: background-color 250ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-item:hover {
@@ -646,7 +650,7 @@ footer {
     border: none;
     border-radius: 4px;
     transition-property: color, box-shadow, background-color;
-    transition: color 250ms linear, box-shadow 250ms linear, background-color 250ms linear; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .filter-item:not(:last-child) {
@@ -675,7 +679,7 @@ footer {
     /* outline: 1px solid red; */
     background: #FFFFFF;
     transition-property: box-shadow;
-    transition: box-shadow 250ms linear;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .overlay {
@@ -747,7 +751,7 @@ footer {
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transition-property: opacity;
-    transition: opacity 250ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .portfolio-item-desc {
@@ -765,6 +769,6 @@ footer {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     transition-property: opacity;
-    transition: opacity 250ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
